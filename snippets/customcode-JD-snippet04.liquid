@@ -1,0 +1,117 @@
+<style>
+  .ccjds04_container {
+    background: #1A1E1E;
+    border-radius: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.52rem;
+    gap: 8px;
+    margin: 0.5rem 0;
+  }
+  .ccjds04_text_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ccjds04_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.333rem;
+    line-height: 1.62rem;
+    color: #EFCE57;
+  }
+  .ccjds04_subtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.333rem;
+    line-height: 1.62rem;
+    color: #FCFCFC;
+    margin: 0;
+  }
+  .ccjds04_counter {
+    display: flex;
+  }
+  .ccjds04_time {
+    text-align: center;
+    margin: 0 5px;
+  }
+  .ccjds04_timeunit {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 375px) {
+    .ccjds04_text_container {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<div class="ccjds04_container">
+  <div class="ccjds04_text_container">
+    <h2 class="ccjds04_text">{{ block.settings.urgency_text }}</h2>
+    <h2 class="ccjds04_text ccjds04_counter"></h2>
+  </div>
+  <h2 class="ccjds04_subtext">{{ block.settings.urgency_deal }}</h2>
+</div>
+
+<script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  // Set the date we're counting down to
+  var countDownDate = new Date(`{{block.settings.countdown_timer}}`).getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    console.log(distance);
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    $('.ccjds04_counter').html('<div class="ccjds04_time">' + days + '<br><span class="ccjds04_timeunit">DAYS</span></div><div class="ccjds04_time">' + hours + ' <br><span class="ccjds04_timeunit">HRS</span> </div>  <div class="ccjds04_time">' + minutes + '<br><span class="ccjds04_timeunit">MINS</span></div>   <div class="ccjds04_time">' + seconds + '<br><span class="ccjds04_timeunit">SEC</span> </div>');
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+    $('.ccjds04_counter').html('<div class="ccjds04_time">' + 0 + '<br>DAYS </div><div class="ccjds04_time">' + 0 + ' <br>HRS </div>  <div class="ccjds04_time">' + 0 + '<br>MINS</div>   <div class="ccjds04_time">' + 0 + '<br>SEC </div>');
+    $('.ccjds04_container').hide();
+    }
+  }, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

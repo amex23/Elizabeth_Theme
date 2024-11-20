@@ -1,0 +1,18 @@
+setTimeout(function() {
+  utils.initializeTabs();
+});
+
+var utils = {
+  initializeTabs: function(){
+    $('ul.tabs > li > a').attr('data-no-instant', true);
+    $('body').on('click', 'ul.tabs > li > a', function(e) {
+      e.preventDefault();
+      var contentLocation = $(this).attr('href');
+      if(contentLocation.charAt(0)=="#") {
+        $('ul.tabs > li > a.active').removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('ul.tabs').next().find(contentLocation).show().css({'display': 'block'}).addClass('active').siblings().hide().removeClass('active');
+      }
+    });
+  }
+};

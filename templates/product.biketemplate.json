@@ -1,0 +1,480 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "0aa909ee-4504-4ab9-9b61-7f0fcfb4e051": {
+          "type": "title",
+          "settings": {}
+        },
+        "3f10fe07-c983-4f47-8c3c-4dd56cc22b66": {
+          "type": "urgency",
+          "settings": {
+            "countdown_timer": "NOV 12, 2024 10:00:00",
+            "urgency_text": "🦅 VETERANS DAY SALE",
+            "urgency_deal": "$400 OFF + A FREE CELL PHONE HOLDER"
+          }
+        },
+        "6de8b436-2120-479b-801f-4b060e5184f8": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"product__text subtitle\">\n        {{- product.metafields.custom.displaydescription.value -}}\n      <\/p>"
+          }
+        },
+        "518bd6cd-1ffb-4e74-85c4-2a96bb9ebf55": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'judgeme_widgets',\n                  widget_type: 'judgeme_preview_badge'\n      -%}"
+          }
+        },
+        "8cb8c607-5356-4589-bccb-513434d325a5": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id='aph_embed_wrapper_354159'><\/div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "9d70a44e-18a4-44b8-a634-1461d165791b": {
+          "type": "text",
+          "settings": {
+            "text": "🔨 Only {{ product.metafields.custom.qty_left_per_day.value }} Built For You Bikes Left Today",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "1e175ec6-c51f-4ce4-a422-70880a298d7d": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .c_price__container, .c_badge {\n    margin: 10px 0 !important;\n  }\n  .c_badge {\n    font-family: 'Cera Pro' !important;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 22px;\n    color: #FFFFFF;\n    border-radius: 0;\n  }\n  .c_price__regular {\n    font-family: 'Cera Pro';\n    font-style: normal;\n    font-weight: 700;\n    font-size: 18px;\n    line-height: 22px;\n    color: #1A1E1E;\n  }\n  .c_price__sale {\n    font-family: 'Cera Pro';\n    font-style: normal;\n    font-weight: 500;\n    font-size: 14px !important;\n    line-height: 22px;\n    color: #656D78 !important;\n  }\n<\/style>\n\n<div class=\"price--on-sale\">\n   <div class=\"price__container c_price__container\">\n      <div class=\"price__sale\">\n      <span class=\"price-item price-item--sale price-item--last c_price__regular\">\n        {{ product.price | minus: 40000 | money }}\n      <\/span>\n         <span>\n         <s class=\"price-item price-item--regular c_price__sale\">\n         {{ product.price | money }}\n         <\/s>\n         <\/span>\n   <\/div>\n   <span class=\"badge price__badge-sale color-{{ settings.sale_badge_color_scheme }} c_badge\">\n   SAVE $400 + A FREE CELL PHONE HOLDER\n   <\/span>\n<\/div>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "1fda46d2-cd83-410c-9465-2bedde37d891": {
+          "type": "dailytimer",
+          "settings": {}
+        },
+        "78478b97-bb26-497f-8e27-81609e15b926": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "image_1": "shopify:\/\/shop_images\/15day_trial_sm.png",
+            "heading_1": "15-Day Try-At-Home",
+            "text_1": "Be 100% confident you will love your bike: try it for 15 days or return it",
+            "icon_2": "return",
+            "image_2": "shopify:\/\/shop_images\/2_Year_Warranty.webp",
+            "heading_2": "2-Year Warranty",
+            "text_2": "Our bikes: 2-year warranty surpasses industry standard 1-year warranty",
+            "icon_3": "truck",
+            "image_3": "shopify:\/\/shop_images\/Veteran_Lead_-_1_1.png",
+            "heading_3": "Veteran-Led",
+            "text_3": "Co-founder Dustin's Air Force values shape our company's principles and ethos"
+          }
+        }
+      },
+      "block_order": [
+        "0aa909ee-4504-4ab9-9b61-7f0fcfb4e051",
+        "3f10fe07-c983-4f47-8c3c-4dd56cc22b66",
+        "6de8b436-2120-479b-801f-4b060e5184f8",
+        "518bd6cd-1ffb-4e74-85c4-2a96bb9ebf55",
+        "8cb8c607-5356-4589-bccb-513434d325a5",
+        "variant_picker",
+        "9d70a44e-18a4-44b8-a634-1461d165791b",
+        "price",
+        "1e175ec6-c51f-4ce4-a422-70880a298d7d",
+        "buy_buttons",
+        "1fda46d2-cd83-410c-9465-2bedde37d891",
+        "78478b97-bb26-497f-8e27-81609e15b926"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "aad8672e-0c2a-4a3a-b414-c178cd266357": {
+      "type": "customcode-JD-section08",
+      "blocks": {
+        "0bae5bb9-6fe9-47bc-bd24-c4c26c2c71bf": {
+          "type": "product",
+          "settings": {
+            "ccjd08_block_image": "shopify:\/\/shop_images\/image.png",
+            "ccjd08_block_text": "Bike Fenders",
+            "ccjd08_block_price": "5500"
+          }
+        },
+        "27df3030-1150-4d26-b212-ed556772cd8e": {
+          "type": "product",
+          "settings": {
+            "ccjd08_block_image": "shopify:\/\/shop_images\/image_1.png",
+            "ccjd08_block_text": "Bike Rack",
+            "ccjd08_block_price": "3999"
+          }
+        },
+        "b3ba1fd4-5708-43e1-9a91-43190eb15fc1": {
+          "type": "product",
+          "settings": {
+            "ccjd08_block_image": "shopify:\/\/shop_images\/image_2.png",
+            "ccjd08_block_text": "Upgraded Bike Seat",
+            "ccjd08_block_price": "2799"
+          }
+        },
+        "adfde0f5-f186-4f50-828d-20a7e554feeb": {
+          "type": "product",
+          "settings": {
+            "ccjd08_block_image": "shopify:\/\/shop_images\/free-shipping-stbc-2.png",
+            "ccjd08_block_text": "Free Shipping",
+            "ccjd08_block_price": "15000"
+          }
+        }
+      },
+      "block_order": [
+        "0bae5bb9-6fe9-47bc-bd24-c4c26c2c71bf",
+        "27df3030-1150-4d26-b212-ed556772cd8e",
+        "b3ba1fd4-5708-43e1-9a91-43190eb15fc1",
+        "adfde0f5-f186-4f50-828d-20a7e554feeb"
+      ],
+      "settings": {
+        "ccjd08_container_color": "#f9f9f9",
+        "ccjd08_heading": "<span class=\"ccjd08_highlight\">Free Accessories Included <\/span> ($275 value)"
+      }
+    },
+    "fb15ce6d-f4f9-46f0-96c8-77b09ed2aec1": {
+      "type": "customcode-JD-section06",
+      "blocks": {
+        "bf1bfe2f-413f-4397-9a61-15b303f1e668": {
+          "type": "review",
+          "settings": {
+            "ccjd06_profile": "shopify:\/\/shop_images\/IMG_1_2.png",
+            "ccjd06_review": "<span style=\"font-weight:normal\">This USA-made e-bike is a game changer - <span style=\"font-weight:bold\">perfect for any adventure!<\/span><\/span>",
+            "ccjd06_author": "Rick A."
+          }
+        },
+        "4131d8e8-9405-44f4-8c60-fab5a3aeb11c": {
+          "type": "review",
+          "settings": {
+            "ccjd06_profile": "shopify:\/\/shop_images\/IMG_1_1.png",
+            "ccjd06_review": "<span style=\"font-weight:normal\">I actually drove to the Small Town Bike headquarters to do a test drive and<span style=\"font-weight:bold\"> I knew within 5 seconds I would be coming home with a bike for my wife and I.<\/span><\/span>",
+            "ccjd06_author": "Ray O."
+          }
+        }
+      },
+      "block_order": [
+        "bf1bfe2f-413f-4397-9a61-15b303f1e668",
+        "4131d8e8-9405-44f4-8c60-fab5a3aeb11c"
+      ],
+      "settings": {
+        "ccjd06_container_color": "#ffffff",
+        "ccjd06_heading": "Don’t Waste Your Money On a Foreign Built E-Bike",
+        "ccjd06_subheading": "Built by people who care. Built with global components providing the best quality in the world.",
+        "ccjd06_image": "shopify:\/\/shop_images\/image_209.png",
+        "ccjd06_video": "https:\/\/www.youtube.com\/embed\/qn2E0Z2saC0"
+      }
+    },
+    "5ccf821a-083f-47fd-a720-da195dd55861": {
+      "type": "customcode-JD-section07",
+      "custom_css": [
+        ".ccjd07_button {background-color: #2c4053;}"
+      ],
+      "settings": {
+        "ccjd07_container_color": "#f9f9f9",
+        "ccjd07_heading": "We Don’t Just Care About Bikes. <span class=\"ccjd07_highlight\">We Care about YOU.<\/span>",
+        "ccjd07_subheading": "If you ever have questions, you'll get a real bike builder on the phone to answer your questions.",
+        "ccjd07_image": "shopify:\/\/shop_images\/Rectangle_412_ff2a521c-2f13-465e-a2b4-abce15cd6398.png"
+      }
+    },
+    "23e6ef5f-bf9e-4afe-b383-feec4b574096": {
+      "type": "customcode-JD-section04",
+      "blocks": {
+        "9a94adb2-c40e-4e98-9217-1670fa801930": {
+          "type": "image",
+          "settings": {
+            "ccjd04_img_logo": "shopify:\/\/shop_images\/Rectangle_413.png"
+          }
+        },
+        "45aeb31c-3888-4451-85d6-a5f8ac09c7d2": {
+          "type": "image",
+          "settings": {
+            "ccjd04_img_logo": "shopify:\/\/shop_images\/Rectangle_414.png"
+          }
+        },
+        "8d7f903f-2797-4a29-a660-466e7a6075b6": {
+          "type": "image",
+          "settings": {
+            "ccjd04_img_logo": "shopify:\/\/shop_images\/foxlogo_a4808aa7-e3da-4679-b508-c6ef328c2b6b.png"
+          }
+        },
+        "f811d96e-9d11-4dff-b067-42c6a1def0fd": {
+          "type": "image",
+          "settings": {
+            "ccjd04_img_logo": "shopify:\/\/shop_images\/Rectangle_416.png"
+          }
+        }
+      },
+      "block_order": [
+        "9a94adb2-c40e-4e98-9217-1670fa801930",
+        "45aeb31c-3888-4451-85d6-a5f8ac09c7d2",
+        "8d7f903f-2797-4a29-a660-466e7a6075b6",
+        "f811d96e-9d11-4dff-b067-42c6a1def0fd"
+      ],
+      "settings": {}
+    },
+    "a79657be-7bf2-43b6-8cfc-d6d9f4e39bca": {
+      "type": "customcode-JD-section02",
+      "blocks": {
+        "99004ac5-e37a-4dac-b169-9009242cc9f3": {
+          "type": "faq",
+          "settings": {
+            "ccjd02_question": "Order Direct Online & Save",
+            "ccjd02_answer": "Make sure you get the best features and components at rock bottom prices by dealing directly with us.",
+            "ccjd02_question_image": "shopify:\/\/shop_images\/Ellipse_8.png"
+          }
+        },
+        "5c1065b5-9b4a-4bb9-b53f-e5933de236a3": {
+          "type": "faq",
+          "settings": {
+            "ccjd02_question": "Bike Store In a Box Shipped To You",
+            "ccjd02_answer": "Unbox, put the pedals and handle bars on, and start riding! No putting wheels on, No Tuning Brakes or Derailluer - Ready out of our custom BOX.",
+            "ccjd02_question_image": "shopify:\/\/shop_images\/Ellipse_9.png"
+          }
+        },
+        "bbb7947f-b551-455d-8a3a-5348effc16de": {
+          "type": "faq",
+          "settings": {
+            "ccjd02_question": "Enjoy The Outdoors",
+            "ccjd02_answer": "Nothing beats enjoying the outdoors with a new electric bike and without tons of effort!",
+            "ccjd02_question_image": "shopify:\/\/shop_images\/Ellipse_10.png"
+          }
+        }
+      },
+      "block_order": [
+        "99004ac5-e37a-4dac-b169-9009242cc9f3",
+        "5c1065b5-9b4a-4bb9-b53f-e5933de236a3",
+        "bbb7947f-b551-455d-8a3a-5348effc16de"
+      ],
+      "settings": {
+        "ccjd02_container_color": "#1a1e1e",
+        "ccjd02_heading": "3 Steps to Avoid the Extra Cost of Bike Stores",
+        "ccjd02_subheading": "(Shipped from Wisconsin to your door)",
+        "play_vid": false,
+        "ccjd02_image": "shopify:\/\/shop_images\/092520_HowToUnbox_Wide_v1_HH_Moment_a1a76dbb-f378-4695-ad94-5600d72e1dc7.jpg"
+      }
+    },
+    "bbfc1940-dd7c-4f8a-830e-7b3241858ee8": {
+      "type": "customcode-JD-section01",
+      "blocks": {
+        "32404745-af3f-4d03-9b89-1d0d725d8c2b": {
+          "type": "table_row",
+          "settings": {
+            "row_title": "USA SUPPORT"
+          }
+        },
+        "e5f0a8dd-af35-4154-944b-dea8415dd7d7": {
+          "type": "table_row",
+          "settings": {
+            "row_title": "BIG BATTERY"
+          }
+        },
+        "4e5cbeb3-ec68-4ca0-a8a2-65a32c7a9336": {
+          "type": "table_row",
+          "settings": {
+            "row_title": "DIRECT PRICING"
+          }
+        },
+        "19bb18c5-677c-41ee-8104-2eb9dcadf5a3": {
+          "type": "table_row",
+          "settings": {
+            "row_title": "COMFORT"
+          }
+        }
+      },
+      "block_order": [
+        "32404745-af3f-4d03-9b89-1d0d725d8c2b",
+        "e5f0a8dd-af35-4154-944b-dea8415dd7d7",
+        "4e5cbeb3-ec68-4ca0-a8a2-65a32c7a9336",
+        "19bb18c5-677c-41ee-8104-2eb9dcadf5a3"
+      ],
+      "custom_css": [
+        "th,td {line-height: 25px;}",
+        ".ccjd01_th_highlight {background-color: #2c4053;}"
+      ],
+      "settings": {
+        "section_title": "The <span class=\"ccjd01_header_highlight\">best E-Bike<\/span> on the market"
+      }
+    },
+    "daa9d01b-09cc-4139-a9e0-9fbb2945791c": {
+      "type": "customcode-JD-section03",
+      "blocks": {
+        "26348d3c-6089-49ca-962b-ca5ff516ec0d": {
+          "type": "image",
+          "settings": {
+            "img_card": "shopify:\/\/shop_images\/Rectangle_412.png"
+          }
+        },
+        "a7b4b346-7759-4726-b974-f561a6acb4b3": {
+          "type": "image",
+          "settings": {
+            "img_card": "shopify:\/\/shop_images\/Rectangle_412_1.png"
+          }
+        },
+        "ba3931e7-cf2c-48d2-9452-47591d3eee13": {
+          "type": "image",
+          "settings": {
+            "img_card": "shopify:\/\/shop_images\/Rectangle_412_2.png"
+          }
+        },
+        "47f6fdfa-1c1d-4485-9069-569227a96b51": {
+          "type": "image",
+          "settings": {
+            "img_card": "shopify:\/\/shop_images\/Rectangle_412_3.png"
+          }
+        }
+      },
+      "block_order": [
+        "26348d3c-6089-49ca-962b-ca5ff516ec0d",
+        "a7b4b346-7759-4726-b974-f561a6acb4b3",
+        "ba3931e7-cf2c-48d2-9452-47591d3eee13",
+        "47f6fdfa-1c1d-4485-9069-569227a96b51"
+      ],
+      "settings": {}
+    },
+    "1fcd90df-7d28-4076-930e-9c22c1c1113b": {
+      "type": "customcode-JD-section05",
+      "blocks": {
+        "a5e4c299-c9a3-4860-8447-30e8c72417c5": {
+          "type": "1",
+          "settings": {
+            "ccjd05_block_heading": "",
+            "ccjd05_block_content": "<ol>\n  <li>\n    <h5 style=\"color: #FFFFFF; font-weight: 600; font-family:\n'Cera Pro';\">Go Further Than Ever Before<\/h5>\n    <p style=\"color: #FFFFFF; font-family:\n'Cera Pro'; font-weight: 100;\">• Go over 50 miles with your Small Town Electric Bike that features a 13.6AH, 48V battery.<\/p>\n  <\/li>\n  <li>\n    <h5 style=\"color: #FFFFFF; font-weight: 600; font-family:\n'Cera Pro';\">Explore Faster Today<\/h5>\n    <p style=\"color: #FFFFFF; font-weight: 100; font-family:\n'Cera Pro';\">• Use five levels of pedal assistance plus thumb throttle to go over 20mph with the 750-watt motor while using the 7-speed Shimano gear shifter!<\/p>\n  <\/li>\n  <li>\n    <h5 style=\"color: #FFFFFF; font-weight: 600; font-family:\n'Cera Pro';\">Enjoy Comfortably<\/h5>\n    <p style=\"color: #FFFFFF; font-weight: 100; font-family:\n'Cera Pro';\">• Ride with comfort on your free upgraded simulated padding that has extra padding.<\/p>\n  <\/li>\n  <li>\n    <h5 style=\"color: #FFFFFF; font-weight: 600; font-family:\n'Cera Pro';\">For All Riders<\/h5>\n    <p style=\"color: #FFFFFF; font-weight: 100; font-family:\n'Cera Pro';\">• Whether you are 4'10 or 6'5 you can enjoy the Small Town Electric Bike equally with options of 24\" or 26\" tires that are 2.125\" wide on an 18\" aluminum alloy frame!<\/p>\n  <\/li>\n  <li>\n    <h5 style=\"color: #FFFFFF; font-weight: 600; font-family:\n'Cera Pro';\">Safety First<\/h5>\n    <p style=\"color: #FFFFFF; font-weight: 100; font-family:\n'Cera Pro';\">• Trust your bike with its top-of-the-line mechanical disc brakes that connect to your backlight so you are easily seen. Turn the highly visible LED front light on to ride outside of daylight!<\/p>\n  <\/li>\n<\/ol>"
+          }
+        },
+        "dcc81aa4-5191-4414-85ed-c21eacf0f04b": {
+          "type": "2",
+          "settings": {
+            "ccjd05_block_heading": "<table style=\"border-collapse:collapse;border-spacing:0\" class=\"tg\"><tbody>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">FRAME<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">18\" Welded Aluminum Alloy<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">CONSTRUCTION<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Premium Tig Welded, Special Ebike Geometry<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">STEM<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Premium Zoom Adjustable<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">GRIPS<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Premium Rubber Ergo<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">BRAKES<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Mechanical Disc<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">REAR CARRIER<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">9lb battery and controller housing<\/td>\n<\/tr>\n<\/tbody><\/table>",
+            "ccjd05_block_content": ""
+          }
+        },
+        "494ccb41-8bb8-4d2a-bacc-8e74f698a32c": {
+          "type": "3",
+          "settings": {
+            "ccjd05_block_heading": "<table style=\"border-collapse:collapse;border-spacing:0\" class=\"tg\"><tbody>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">DISPLAY<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">High Contrast LCD Display<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">BACKLIGHT<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Yes<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">FRONT LIGHT<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">High Visibility LED<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">REAR<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Red Safety Light<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">WATER RESISTANT<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Yes<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">PEDAL ASSIST<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Levels 1-5<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">THROTTLE<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Variable Thumb<\/td>\n<\/tr>\n<tr>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">BRAKES<\/td>\n<td style=\"border-color:#000000;border-style:solid;border-width:1px;font-family:'Cera Pro', sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal\">Safety Motor Cut-off switch<\/td>\n<\/tr>\n<\/tbody><\/table>",
+            "ccjd05_block_content": ""
+          }
+        },
+        "30e607b6-9480-4f5c-a40f-be3c021afefd": {
+          "type": "4",
+          "settings": {
+            "ccjd05_block_heading": "<button class=\"ccjd05_accordion\">What is your warranty?<span class=\"ccjd02_icon\">+<\/span><\/button>",
+            "ccjd05_block_content": "<div class=\"ccjd05_panel\">\n  <p>Small Town Bike Co offers an industry-leading 2-year warranty on our electric bikes. If you ever have a question about the bike or an issue just give us a call at 1-833-266-4432.\n<\/p>\n<\/div>"
+          }
+        },
+        "79c20fbb-62ae-40c3-975f-133f9aa8e324": {
+          "type": "4",
+          "settings": {
+            "ccjd05_block_heading": "<button class=\"ccjd05_accordion\">What is your try at home period?<span class=\"ccjd02_icon\">+<\/span><\/button>",
+            "ccjd05_block_content": "<div class=\"ccjd05_panel\">\n  <p>We offer a 15-day try-at-home guarantee. If you love the bike like we know you will keep it. If for some reason you don't, send it back with no questions asked.\n<\/p>\n<\/div>"
+          }
+        },
+        "9154c79f-fc9b-4255-9bd5-600777c8b690": {
+          "type": "4",
+          "settings": {
+            "ccjd05_block_heading": "<button class=\"ccjd05_accordion\">Do you build them in the USA?<span class=\"ccjd02_icon\">+<\/span><\/button>",
+            "ccjd05_block_content": "<div class=\"ccjd05_panel\">\n  <p>Each Small Town Bike is built in Waldo, Wisconsin. Stop in and say hi if you ever driving through!\n<\/p>\n<\/div>"
+          }
+        },
+        "1cf76350-4cfe-4dac-812b-ceb1d60a1007": {
+          "type": "4",
+          "settings": {
+            "ccjd05_block_heading": "<button class=\"ccjd05_accordion\">How far can I explore on this electric bike?<span class=\"ccjd02_icon\">+<\/span><\/button>",
+            "ccjd05_block_content": "<div class=\"ccjd05_panel\">\n  <p>You can go approximately 50 miles on each charge. \n<\/p>\n<\/div>"
+          }
+        },
+        "307034b8-891f-4777-9c99-0433d9327bd8": {
+          "type": "4",
+          "settings": {
+            "ccjd05_block_heading": "<button class=\"ccjd05_accordion\">Do you have a phone number I can call?<span class=\"ccjd02_icon\">+<\/span><\/button>",
+            "ccjd05_block_content": "<div class=\"ccjd05_panel\">\n  <p>Give us a call anytime at 1-833-266-4432 to talk to one of our Wisconsin-based team members. We look forward to talking to you! \n<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "a5e4c299-c9a3-4860-8447-30e8c72417c5",
+        "dcc81aa4-5191-4414-85ed-c21eacf0f04b",
+        "494ccb41-8bb8-4d2a-bacc-8e74f698a32c",
+        "30e607b6-9480-4f5c-a40f-be3c021afefd",
+        "79c20fbb-62ae-40c3-975f-133f9aa8e324",
+        "9154c79f-fc9b-4255-9bd5-600777c8b690",
+        "1cf76350-4cfe-4dac-812b-ceb1d60a1007",
+        "307034b8-891f-4777-9c99-0433d9327bd8"
+      ],
+      "settings": {
+        "ccjd05_container_color": "#1a1e1e",
+        "ccjd05_heading": "SPECIFICATIONS",
+        "ccjd05_tab01": "SPECS",
+        "ccjd05_image_tab01": "shopify:\/\/shop_images\/IMA_Bike_Tech_Benefits_STBC-cropped-2.png",
+        "ccjd05_tab02": "BIKE",
+        "ccjd05_image_tab02": "shopify:\/\/shop_images\/DSC06415_1.jpg",
+        "ccjd05_tab03": "ELECTRONICS",
+        "ccjd05_image_tab03": "shopify:\/\/shop_images\/DSC06392-Edit.jpg",
+        "ccjd05_tab04": "FAQ",
+        "ccjd05_image_tab04": "shopify:\/\/shop_images\/DSC06471.jpg"
+      }
+    },
+    "168015192976919e48": {
+      "type": "apps",
+      "blocks": {
+        "d8913f26-7116-4752-ab52-c21f4341a226": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "d8913f26-7116-4752-ab52-c21f4341a226"
+      ],
+      "custom_css": [
+        "#judgeme_product_reviews > div > div.jdgm-rev-widg__header > div.jdgm-row-stars > div.jdgm-widget-actions-wrapper > a {background-color: #f85a5a; border: 2px solid #f85a5a;}",
+        ".jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown,.jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown-arrow,.jdgm-rev__author,.jdgm-rev__icon:before {color: #f85a5a;}",
+        "#judgeme_product_reviews > div > div.jdgm-rev-widg__body > div.jdgm-paginate > a {background-color: #f85a5a; border: 2px solid #f85a5a;}"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "aad8672e-0c2a-4a3a-b414-c178cd266357",
+    "fb15ce6d-f4f9-46f0-96c8-77b09ed2aec1",
+    "5ccf821a-083f-47fd-a720-da195dd55861",
+    "23e6ef5f-bf9e-4afe-b383-feec4b574096",
+    "a79657be-7bf2-43b6-8cfc-d6d9f4e39bca",
+    "bbfc1940-dd7c-4f8a-830e-7b3241858ee8",
+    "daa9d01b-09cc-4139-a9e0-9fbb2945791c",
+    "1fcd90df-7d28-4076-930e-9c22c1c1113b",
+    "168015192976919e48"
+  ]
+}

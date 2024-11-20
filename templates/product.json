@@ -1,0 +1,85 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "d6032ef0-096f-4c85-aef4-09adf67c31f1": {
+          "type": "text",
+          "settings": {
+            "text": "DESCRIPTION",
+            "text_style": "heading"
+          }
+        },
+        "displayDescription": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.displaydescription.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "8cb8c607-5356-4589-bccb-513434d325a5": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id='aph_embed_wrapper_354159'><\/div>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "infinite_options_app_block_jG3g9e": {
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "d6032ef0-096f-4c85-aef4-09adf67c31f1",
+        "displayDescription",
+        "8cb8c607-5356-4589-bccb-513434d325a5",
+        "description",
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "infinite_options_app_block_jG3g9e"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

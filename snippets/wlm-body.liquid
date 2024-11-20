@@ -1,0 +1,56 @@
+{% capture wlmPnfContent %}
+		<div class="page-width">
+		<div class="grid">
+		  <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+			<div class="section-header text-center">
+			  <h2><span class="wlm-title-pnf">{{ wlmPnfHead }}</span></h2>
+			</div>
+
+			<div class="rte">
+			  <div class="wlm-message-pnf">{{ wlmPnfMsg }}</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  {% endcapture %}
+	  {% if wlmLockON %}
+		<div id="wlmpnf">{{ wlmPnfContent }}</div>
+	  {% else %}
+		<wlm class="wlm-content page-content">
+		  {{ content_for_layout }}
+		</wlm>
+		<div id="wlmpnf" style="display:none;">{{ wlmPnfContent }}</div>
+        {% include "wlm-pwd-form" %}
+        <script type="text/javascript" id="wlm-helper">
+        if( typeof wlm == "object" ) wlm.toggleContent(true);
+      </script>
+ {% endif %}
+
+ {% if request.path == '/pages/boogie-fat' %}
+    <style>
+
+        @media screen and (min-width: 1024px) {
+            .page-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+            }
+        }
+
+        @media screen and (min-width: 990px) {
+            .featured-product:not(.product--no-media)>.product__info-wrapper {
+                padding: 0px 0px 0px 12px;
+                /* margin-left: 8px; */
+            }
+        }
+
+        @media screen and (max-width: 1023px) {
+            .page-content {
+                display: grid;
+                grid-template-columns: 1fr; 
+            }
+        }
+       
+    </style>
+ {% else %}   
+    
+ {% endif %}
